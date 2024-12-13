@@ -166,7 +166,7 @@ function buildMenu(menuItems) {
       
         if (item.submenu) {
             const toggleIcon = document.createElement("span");
-            toggleIcon.textContent = "▶"; 
+            toggleIcon.textContent = "\u25B6"; 
             toggleIcon.classList.add("toggle-icon");
 
            
@@ -178,7 +178,7 @@ function buildMenu(menuItems) {
            
             toggleIcon.addEventListener("click", () => {
                 submenu.classList.toggle("show");
-                toggleIcon.textContent = submenu.classList.contains("show") ? "▼" : "▶"; 
+                toggleIcon.textContent = submenu.classList.contains("show") ? "\u25BC" : "\u25B6"; 
         }) ;
             li.appendChild(submenu);
         }
